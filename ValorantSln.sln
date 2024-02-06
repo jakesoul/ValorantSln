@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValorantWebsite", "ValorantWebsite\ValorantWebsite.csproj", "{030A1722-0528-4640-8358-7D10BDC8E04E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValorantWebsite.Tests", "ValorantWebsite.Tests\ValorantWebsite.Tests.csproj", "{FC6F9A1E-C875-4CB8-A971-FFDCDD674114}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{030A1722-0528-4640-8358-7D10BDC8E04E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{030A1722-0528-4640-8358-7D10BDC8E04E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{030A1722-0528-4640-8358-7D10BDC8E04E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{030A1722-0528-4640-8358-7D10BDC8E04E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC6F9A1E-C875-4CB8-A971-FFDCDD674114}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC6F9A1E-C875-4CB8-A971-FFDCDD674114}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC6F9A1E-C875-4CB8-A971-FFDCDD674114}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC6F9A1E-C875-4CB8-A971-FFDCDD674114}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

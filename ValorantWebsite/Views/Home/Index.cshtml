@@ -1,0 +1,15 @@
+﻿@model AgentsListViewModel
+
+<h2>Valorant Agents</h2>
+@foreach (var a in Model.Agents ?? Enumerable.Empty<Agent>())
+{
+    <partial name="AgentSummary" model="a" />
+}
+
+<div page-model='@Model.PagingInfo' page-action='Index'
+     page-classes-enabled='true' page-class='btn'
+     page-class-normal='btn-outline-dark'
+     page-class-selected='btn-primary'
+     page-url-role='@Model.CurrentRole!' 
+     class='btn-group pull-right m-1'>
+</div>
