@@ -1,14 +1,13 @@
-﻿/*
- * using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using ValorantWebsite.Models;
 
 namespace ValorantWebsite.Components
 {
-    public class NavigationMenuViewComponent : ViewComponent
+    public class AgentNavigationViewComponent : ViewComponent
     {
         private IValorantRepository repository;
 
-        public NavigationMenuViewComponent(IValorantRepository repo)
+        public AgentNavigationViewComponent(IValorantRepository repo)
         {
             repository = repo;
         }
@@ -24,6 +23,3 @@ namespace ValorantWebsite.Components
         }
     }
 }
-/*
- Change page so that it matches the filter for the Index.cshtml file
- */

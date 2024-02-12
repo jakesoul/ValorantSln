@@ -7,10 +7,8 @@ namespace ValorantWebsite.Models
         public int? AgentID { get; set; }
         public string Name { get; set; } = string.Empty;
         public string Role {  get; set; } = string.Empty;
-        /*
-         * Types = Q_Ability, E_Ability, C_Ability, X-Ability
-         * https://valorant.fandom.com/wiki/Abilities
-         */
+        //see ValorantDbContext.cs file for AgentRole? AgentRole
+        //public AgentRole? AgentRole { get; set; }
         public string Q_Ability { get; set; } = string.Empty;
         public string E_Ability { get; set; } = string.Empty;
         public string C_Ability { get; set; } = string.Empty;

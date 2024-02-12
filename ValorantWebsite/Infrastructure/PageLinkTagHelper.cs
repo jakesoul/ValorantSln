@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc.Routing;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.AspNetCore.Razor.TagHelpers;
 using ValorantWebsite.Models.ViewModels;
+using ValorantWebsite.Models;
 
 namespace ValorantWebsite.Infrastructure
 {
@@ -40,7 +41,16 @@ namespace ValorantWebsite.Infrastructure
                 for (int i = 1; i <= PageModel.TotalPages; i++)
                 {
                     TagBuilder tag = new TagBuilder("a");
-                    PageUrlValues["agentPage"] = i;
+
+                    //PageUrlValues["agentPage"] = i;
+                    if (PageAction == "AgentList")
+                    {
+                        PageUrlValues["agentPage"] = i;
+                    }
+                    else if (PageAction == "MapList")
+                    {
+                        PageUrlValues["mapPage"] = i;
+                    }
 
                     tag.Attributes["href"] = urlHelper.Action(PageAction, PageUrlValues);
                     if (PageClassesEnabled)

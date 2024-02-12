@@ -1,13 +1,14 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace ValorantWebsite.Models
 {
-    public class AgentRole : Agent
+    public class AgentRole
     {
-        public string Duelist { get; set; } = string.Empty;
-        public string Initator { get; set; } = string.Empty;
-        public string Controller { get; set; } = string.Empty;
-        public string Sentinel { get; set; } = string.Empty;
+        public string AgentRoleId { get; set; } = string.Empty;
+        public string AgentRoleName { get; set; } = string.Empty;
 
     }
 }

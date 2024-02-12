@@ -19,18 +19,17 @@
                 Agents
             </a>
         </span>
-        
+
         <span style="margin-left:3rem">
             <a class="btn btn-primary" asp-action="MapList" asp-controller="Map">
                 Maps
             </a>
         </span>
         </div>
-
         <div class="row m-1 p-1">
-            <div id="roles" class="col-3">
-            <!--<vc:agent-navigation />--->
-            </div>
+            <div id="mapNames" class="col-3">
+            <vc:map-navigation />
+        </div>
             <div class="col-9">
                 @RenderBody()
             </div>

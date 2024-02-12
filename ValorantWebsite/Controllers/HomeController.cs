@@ -15,8 +15,8 @@ namespace ValorantWebsite.Controllers
             repository = repo;
         }
 
-        //public IActionResult Index() => View(repository.Agents);
-
+        public IActionResult Index() => View();
+        /*
         public ViewResult Index(string? role, int agentPage = 1) 
             => View(new AgentsListViewModel
             {
@@ -35,5 +35,6 @@ namespace ValorantWebsite.Controllers
                 },
                 CurrentRole = role
             });
+        */
     }
 }

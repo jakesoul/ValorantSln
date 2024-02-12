@@ -1,15 +1,67 @@
 ﻿@model AgentsListViewModel
 
-<h2>Valorant Agents</h2>
-@foreach (var a in Model.Agents ?? Enumerable.Empty<Agent>())
-{
-    <partial name="AgentSummary" model="a" />
-}
+<!DOCTYPE html>
+<html>
+    <head>
 
-<div page-model='@Model.PagingInfo' page-action='Index'
-     page-classes-enabled='true' page-class='btn'
-     page-class-normal='btn-outline-dark'
-     page-class-selected='btn-primary'
-     page-url-role='@Model.CurrentRole!' 
-     class='btn-group pull-right m-1'>
-</div>
+    </head>
+
+    <body>
+        <h2>Welcome to Valorant</h2>
+
+        <h5>
+            WHAT IS VALORANT? TACTICAL GUNPLAY
+        </h5>
+
+        <p>
+            Riot Games presents VALORANT: a 5v5 character-based tactical FPS where precise gunplay meets unique agent abilities. Learn about VALORANT and its stylish cast.
+        </p>
+        <p>
+            Valorant is a free-to-play tactical 5v5 character-based tactical first-person shooter (FPS) game developed and published by Riot Games. It was officially released on June 2, 2020. Valorant gained significant attention prior to its release due to its association with Riot Games, the same company behind the highly popular game League of Legends.
+        </p>
+
+        <p>
+            Key features of Valorant include:
+        </p>
+
+        <ol>
+            <li>
+                Characters (Agents): Players can choose from a roster of characters, known as Agents, each with unique abilities. These abilities can be used strategically to gain an advantage over opponents.
+            </li>
+            <li>
+                Tactical Gameplay: Valorant emphasizes strategic and tactical gameplay, requiring teamwork and coordination among players. The game combines traditional gunplay with the unique abilities of each Agent.
+            </li>
+            <li>
+                Round-based Matches: Valorant typically consists of round-based matches, where one team takes on the role of attackers trying to plant a bomb (spike) and the other team defends. The attacking team must successfully plant the spike, while the defending team aims to prevent them or defuse the spike if it's planted.
+            </li>
+            <li>
+                Economy System: Players earn currency (Creds) during rounds, which can be used to purchase weapons, shields, and abilities. Managing the in-game economy is crucial for success in matches.
+            </li>
+            <li>
+                Anti-Cheat System: Valorant employs an advanced anti-cheat system known as Vanguard to ensure fair play and combat cheating.
+            </li>
+            <li>
+                Graphics and Art Style: The game features a distinctive art style with a mix of realistic and stylized graphics, and it is designed to be accessible to a broad audience.
+            </li>
+        </ol>
+
+        <h5>
+            WHAT IS THE LORE?
+        </h5>
+        <p>
+        VALORANT is set in the near future (around 30 years ahead of now), where the world has advanced significantly in technology through a near-magical new substance called 'Radianite'. The existence of this substance has lead to great changes in the scene of the world, although most basic aspects of everyday life still prevail. A large megacorp, Kingdom, has gained a monopoly over the Radianite market and has grown to immense wealth and power.
+        </p>
+
+        <p>
+        Recently, there has been an emergence of people who possess paranormal powers. Those people have been called 'Radiants' (which stems from Radianite). At the point of the game taking place, Radiants have become an accepted minority in society.
+        </p>
+
+        <p>
+        While most radiants' powers are quite meek and don't affect their lives too much, there are certain individuals who have very high potential (Phoenix and Jett are examples of such Radiants, both of whom have been recruited into VALORANT Protocol).
+        </p>
+
+        <p>
+        Though we know that the events of the game take place in around 2050, the Devs avoid using concrete dates. Time periods are usually referred to around the basis of First Light. For example, the DUELISTS cinematic occurred 10 years after First Light, which is referred to as 10 aFL (10 after First Light) instead of ~2049 AD.
+        </p>
+    </body>
+</html>
