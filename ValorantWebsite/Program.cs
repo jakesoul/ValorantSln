@@ -14,8 +14,6 @@ builder.Services.AddScoped<IValorantRepository, EFValorantRepository>();
 
 var app = builder.Build();
 
-//app.MapGet("/", () => "Hello World!");
-
 app.UseStaticFiles();
 
 app.MapControllerRoute("rolePage", "{role}/Page{agentPage:int}", new { Controller = "Home", action = "Index" });
